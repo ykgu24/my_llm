@@ -14,7 +14,7 @@ def get_retriever():
     # 定义 Embeddings
     embedding = ZhipuAIEmbeddings()
     # 向量数据库持久化路径
-    persist_directory = './data_base/chroma'
+    persist_directory = './chroma'
     # 加载数据库
     vectordb = Chroma(
         persist_directory=persist_directory,
